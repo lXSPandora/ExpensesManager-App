@@ -1,0 +1,54 @@
+{
+  "name": "ExpensesManager",
+  "version": "0.0.1",
+  "private": true,
+  "author": {
+    "name": "Luiz Fernando Sousa Camargo",
+    "email": "luizepauloxd@gmail.com",
+    "url": "https://github.com/lXSPandora"
+  },
+  "dependencies": {
+    "eslint": "^4.18.1",
+    "react": "16.2.0",
+    "react-native": "0.53.3",
+    "react-native-linear-gradient": "^2.4.0",
+    "react-native-modal-datetime-picker": "^4.13.0",
+    "react-navigation": "^1.1.2",
+    "styled-components": "^3.1.6"
+  },
+  "devDependencies": {
+    "babel-eslint": "^8.2.2",
+    "babel-jest": "22.4.0",
+    "babel-preset-react-native": "4.0.0",
+    "eslint-plugin-flowtype": "^2.45.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-react-native": "^3.2.1",
+    "haul": "^1.0.0-beta.13",
+    "jest": "22.4.0",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.10.2",
+    "react-test-renderer": "16.2.0"
+  },
+  "lint-staged": {
+    "*.js": [
+      "prettier --write --single-quote true --trailing-comma all --print-width 120",
+      "eslint --fix",
+      "git add"
+    ]
+  },
+  "jest": {
+    "preset": "react-native"
+  },
+  "pre-commit": "lint:staged",
+  "scripts": {
+    "start": "haul",
+    "test": "jest",
+    "android:apk": "cd android && ./gradlew assembleRelease",
+    "android:install":
+      "adb install android/app/build/outputs/apk/app-release.apk",
+    "ios": "react-native run-ios",
+    "lint": "eslint src",
+    "lint:staged": "lint-staged"
+  }
+}
