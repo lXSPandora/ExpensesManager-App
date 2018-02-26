@@ -122,9 +122,7 @@ class Home extends Component {
             {TABS.map((tab, i) => (
               <TabButton key={i} onPress={() => this.setList(tab.key)}>
                 <TabTitle>{tab.title}</TabTitle>
-                <TabIndicator
-                  color={tab.key === route_key ? 'white' : 'transparent'}
-                />
+                <TabIndicator color={tab.key === route_key ? 'white' : 'transparent'} />
               </TabButton>
             ))}
           </Tabs>

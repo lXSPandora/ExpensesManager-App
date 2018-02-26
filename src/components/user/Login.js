@@ -1,11 +1,6 @@
 // @flow
 import * as React from 'react';
-import {
-  Dimensions,
-  Platform,
-  StatusBar,
-  KeyboardAvoidingView,
-} from 'react-native';
+import { Dimensions, Platform, StatusBar, KeyboardAvoidingView } from 'react-native';
 import GradientBackground from '../../elements/GradientBackground';
 import NextFloatingButton from '../../elements/NextFloatingButton';
 import Input from '../../elements/Input';
@@ -78,15 +73,9 @@ class Login extends React.Component {
         }}
         error={error}
       >
-        <StatusBar
-          backgroundColor={error ? '#F90000' : '#00C5F9'}
-          barStyle="light-content"
-        />
+        <StatusBar backgroundColor={error ? '#F90000' : '#00C5F9'} barStyle="light-content" />
         <SafeArea />
-        <HeaderLogin
-          title="Login"
-          backAction={() => this.props.navigation.pop()}
-        />
+        <HeaderLogin title="Login" backAction={() => this.props.navigation.pop()} />
         <KeyboardAwareScrollView
           style={{
             flex: 1,
@@ -110,11 +99,7 @@ class Login extends React.Component {
             />
           </InputWrapper>
         </KeyboardAwareScrollView>
-        <NextFloatingButton
-          color="white"
-          iconColor={error ? 'red' : '#2EDAD0'}
-          onPress={this.login}
-        />
+        <NextFloatingButton color="white" iconColor={error ? 'red' : '#2EDAD0'} onPress={this.login} />
         {Platform.OS === 'ios' && <KeyboardAvoidingView />}
       </GradientBackground>
     );

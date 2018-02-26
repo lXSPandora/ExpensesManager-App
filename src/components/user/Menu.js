@@ -63,17 +63,11 @@ class Menu extends React.Component {
         <SafeAreaView />
         <Container>
           <LogoContainer>
-            <Icon
-              width={100}
-              height={102}
-              tintColor="white"
-              icon={LOGO_HELPER.BILL}
-            />
+            <Icon width={100} height={102} tintColor="white" icon={LOGO_HELPER.BILL} />
           </LogoContainer>
           <Title>Welcome to Expense Manager</Title>
           <Description>
-            Here you can manage your expenses using a fun way! make the login or
-            sign up to discover more!
+            Here you can manage your expenses using a fun way! make the login or sign up to discover more!
           </Description>
         </Container>
         <ButtonsContainer>

@@ -12,8 +12,7 @@ type InputType = {
 };
 
 const Wrapper = styled.TextInput`
-  background-color: ${props =>
-    props.color ? props.color : 'rgba(216, 216, 216, 0.6)'};
+  background-color: ${props => (props.color ? props.color : 'rgba(216, 216, 216, 0.6)')};
   padding-horizontal: 25;
   padding-vertical: 15;
   border-radius: 30;
@@ -24,15 +23,7 @@ const Wrapper = styled.TextInput`
   margin: 10px;
 `;
 
-const Input = ({
-  color,
-  textColor,
-  value,
-  label,
-  onChangeText,
-  width,
-  ...props
-}: InputType) => (
+const Input = ({ color, textColor, value, label, onChangeText, width, ...props }: InputType) => (
   <Wrapper
     color={color}
     textColor={textColor}

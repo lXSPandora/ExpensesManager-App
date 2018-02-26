@@ -1,6 +1,6 @@
 // @flow
 import * as React from 'react';
-import { ScrollView, Dimensions, Platform, StatusBar } from 'react-native';
+import { Dimensions, StatusBar } from 'react-native';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
 import GradientBackground from '../../elements/GradientBackground';
 import NextFloatingButton from '../../elements/NextFloatingButton';
@@ -70,15 +70,7 @@ class SignUp extends React.Component {
   };
 
   render() {
-    const {
-      fullName,
-      email,
-      password,
-      confirm,
-      companyName,
-      companyIndustry,
-      error,
-    } = this.state;
+    const { fullName, email, password, confirm, error } = this.state;
     return (
       <GradientBackground
         error={error}
@@ -87,14 +79,8 @@ class SignUp extends React.Component {
         }}
       >
         <SafeArea />
-        <StatusBar
-          backgroundColor={error ? '#F90000' : '#0090FF'}
-          barStyle="light-content"
-        />
-        <HeaderLogin
-          title="Sign Up"
-          backAction={() => this.props.navigation.pop()}
-        />
+        <StatusBar backgroundColor={error ? '#F90000' : '#0090FF'} barStyle="light-content" />
+        <HeaderLogin title="Sign Up" backAction={() => this.props.navigation.pop()} />
         <KeyboardAwareScrollView
           style={{
             flex: 1,
@@ -133,11 +119,7 @@ class SignUp extends React.Component {
             />
           </InputWrapper>
         </KeyboardAwareScrollView>
-        <NextFloatingButton
-          color="white"
-          iconColor={error ? 'red' : '#2EDAD0'}
-          onPress={this.signUp}
-        />
+        <NextFloatingButton color="white" iconColor={error ? 'red' : '#2EDAD0'} onPress={this.signUp} />
       </GradientBackground>
     );
   }

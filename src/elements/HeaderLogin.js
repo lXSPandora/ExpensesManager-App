@@ -34,12 +34,7 @@ type HeaderInput = {
 const HeaderLogin = ({ title, backAction, logo }: HeaderInput) => (
   <Wrapper>
     <BackButton onPress={backAction}>
-      <Icon
-        width={27}
-        height={27}
-        tintColor="white"
-        icon={logo ? logo : LOGO_HELPER.BACK_ICON}
-      />
+      <Icon width={27} height={27} tintColor="white" icon={logo ? logo : LOGO_HELPER.BACK_ICON} />
     </BackButton>
     <Title>{title}</Title>
   </Wrapper>

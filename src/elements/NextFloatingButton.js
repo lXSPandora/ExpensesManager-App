@@ -21,19 +21,9 @@ const Wrapper = styled.TouchableOpacity`
   right: 20;
 `;
 
-const NextFloatingButton = ({
-  color,
-  iconColor,
-  logo,
-  ...props
-}: NextFloatingButtonType) => (
+const NextFloatingButton = ({ color, iconColor, logo, ...props }: NextFloatingButtonType) => (
   <Wrapper color={color} {...props}>
-    <Icon
-      tintColor={iconColor}
-      width={20}
-      height={20}
-      icon={logo ? logo : LOGO_HELPER.ARROW}
-    />
+    <Icon tintColor={iconColor} width={20} height={20} icon={logo ? logo : LOGO_HELPER.ARROW} />
   </Wrapper>
 );
 NextFloatingButton.propTypes = {

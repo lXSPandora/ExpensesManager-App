@@ -1,11 +1,6 @@
 // @flow
 import * as React from 'react';
-import {
-  Dimensions,
-  Platform,
-  StatusBar,
-  KeyboardAvoidingView,
-} from 'react-native';
+import { Dimensions, Platform, StatusBar, KeyboardAvoidingView } from 'react-native';
 import GradientBackground from '../../elements/GradientBackground';
 import NextFloatingButton from '../../elements/NextFloatingButton';
 import Input from '../../elements/Input';
@@ -79,10 +74,7 @@ class AddExpense extends React.Component {
         }}
         error={error}
       >
-        <StatusBar
-          backgroundColor={error ? '#F90000' : '#00C5F9'}
-          barStyle="light-content"
-        />
+        <StatusBar backgroundColor={error ? '#F90000' : '#00C5F9'} barStyle="light-content" />
         <SafeArea />
         <HeaderLogin
           title="Add a new Expense"

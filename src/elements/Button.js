@@ -27,14 +27,7 @@ type ButtonProps = {
   padding: number,
 };
 
-const Button = ({
-  color,
-  textColor,
-  title,
-  padding,
-  onPress,
-  ...props
-}: ButtonProps) => (
+const Button = ({ color, textColor, title, padding, onPress, ...props }: ButtonProps) => (
   <Wrapper padding={padding} color={color} onPress={onPress} {...props}>
     <Text textColor={textColor}>{title}</Text>
   </Wrapper>

@@ -29,5 +29,5 @@ export const Router = StackNavigator(
   },
   {
     initialRouteName: 'splash',
-  }
+  },
 );

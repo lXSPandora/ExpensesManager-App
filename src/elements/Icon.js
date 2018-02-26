@@ -17,13 +17,7 @@ type IconType = {
 };
 
 const Icon = ({ width, height, tintColor, icon, ...props }: IconType) => (
-  <Wrapper
-    width={width}
-    height={height}
-    tintColor={tintColor}
-    source={icon}
-    {...props}
-  />
+  <Wrapper width={width} height={height} tintColor={tintColor} source={icon} {...props} />
 );
 
 Icon.propTypes = {
