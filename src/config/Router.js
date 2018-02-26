@@ -1,4 +1,6 @@
-import { StackNavigator } from 'react-navigation';
+import { StackNavigator, TabNavigator } from 'react-navigation';
+import { Image } from 'react-native';
+import React from 'react';
 import SplashScreen from '../components/splash/SplashScreen';
 import Menu from '../components/user/Menu';
 import SignUp from '../components/user/SignUp';

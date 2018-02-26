@@ -19,4 +19,5 @@ export const LOGO_HELPER = {
   LIGHT: require('../../assets/light.png'),
   WATER: require('../../assets/water.png'),
   CREDIT_CARD: require('../../assets/creditcard.png'),
+  ADD: require('../../assets/add.png'),
 };
