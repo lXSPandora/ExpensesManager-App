@@ -9,10 +9,16 @@
   },
   "dependencies": {
     "eslint": "^4.18.1",
+    "husky": "^0.14.3",
     "react": "16.2.0",
     "react-native": "0.53.3",
+    "react-native-actionsheet": "^2.3.0",
+    "react-native-fingerprint-scanner": "^2.3.2",
+    "react-native-keyboard-aware-scroll-view": "^0.4.4",
+    "react-native-keyboard-spacer": "^0.4.1",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-modal-datetime-picker": "^4.13.0",
+    "react-native-snackbar": "^0.4.6",
     "react-navigation": "^1.1.2",
     "styled-components": "^3.1.6"
   },
@@ -31,24 +37,25 @@
     "react-test-renderer": "16.2.0"
   },
   "lint-staged": {
-    "*.js": [
-      "prettier --write --single-quote true --trailing-comma all --print-width 120",
-      "eslint --fix",
-      "git add"
-    ]
+    "*.js": ["yarn prettier", "eslint --fix", "git add"]
   },
+
   "jest": {
     "preset": "react-native"
   },
-  "pre-commit": "lint:staged",
   "scripts": {
     "start": "haul",
     "test": "jest",
     "android:apk": "cd android && ./gradlew assembleRelease",
+    "prettier":
+      "prettier --write --single-quote true --trailing-comma all --print-width 120",
+    "prettier:all":
+      "prettier --write --single-quote true --trailing-comma all --print-width 120 --write 'src/**/*.js'",
+
     "android:install":
       "adb install android/app/build/outputs/apk/app-release.apk",
     "ios": "react-native run-ios",
     "lint": "eslint src",
-    "lint:staged": "lint-staged"
+    "precommit": "lint-staged"
   }
 }
