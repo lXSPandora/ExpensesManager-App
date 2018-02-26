@@ -11,8 +11,13 @@
     "eslint": "^4.18.1",
     "react": "16.2.0",
     "react-native": "0.53.3",
+    "react-native-actionsheet": "^2.3.0",
+    "react-native-fingerprint-scanner": "^2.3.2",
+    "react-native-keyboard-aware-scroll-view": "^0.4.4",
+    "react-native-keyboard-spacer": "^0.4.1",
     "react-native-linear-gradient": "^2.4.0",
     "react-native-modal-datetime-picker": "^4.13.0",
+    "react-native-snackbar": "^0.4.6",
     "react-navigation": "^1.1.2",
     "styled-components": "^3.1.6"
   },
@@ -45,8 +50,7 @@
     "start": "haul",
     "test": "jest",
     "android:apk": "cd android && ./gradlew assembleRelease",
-    "android:install":
-      "adb install android/app/build/outputs/apk/app-release.apk",
+    "android:install": "adb install android/app/build/outputs/apk/app-release.apk",
     "ios": "react-native run-ios",
     "lint": "eslint src",
     "lint:staged": "lint-staged"
