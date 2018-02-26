@@ -4,13 +4,8 @@ import android.app.Application;
 
 import com.facebook.react.ReactApplication;
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
 import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 import com.horcrux.svg.SvgPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
-import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
-import com.BV.LinearGradient.LinearGradientPackage;
-import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 import com.BV.LinearGradient.LinearGradientPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
@@ -35,11 +30,6 @@ public class MainApplication extends Application implements ReactApplication {
             new SnackbarPackage(),
             new LinearGradientPackage(),
             new ReactNativeFingerprintScannerPackage(),
-            new LinearGradientPackage(),
-            new ReactNativeFingerprintScannerPackage(),
-            new LinearGradientPackage(),
-            new ReactNativeFingerprintScannerPackage(),
-            new LinearGradientPackage()
       );
     }
 
