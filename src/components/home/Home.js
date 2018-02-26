@@ -90,9 +90,11 @@ class Home extends Component {
     });
   };
 
+  goToAdd = () => this.props.navigation.navigate('addExpense');
+
   renderAddButton = () => {
     return (
-      <ButtonWrapper>
+      <ButtonWrapper onPress={this.goToAdd}>
         <Icon width={30} height={30} icon={LOGO_HELPER.ADD} />
       </ButtonWrapper>
     );

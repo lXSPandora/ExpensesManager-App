@@ -4,6 +4,7 @@ import Menu from '../components/user/Menu';
 import SignUp from '../components/user/SignUp';
 import Login from '../components/user/Login';
 import Home from '../components/home/Home';
+import AddExpense from '../components/home/AddExpense';
 
 export const Router = StackNavigator(
   {
@@ -21,6 +22,9 @@ export const Router = StackNavigator(
     },
     home: {
       screen: Home,
+    },
+    addExpense: {
+      screen: AddExpense,
     },
   },
   {

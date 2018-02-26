@@ -20,4 +20,5 @@ export const LOGO_HELPER = {
   WATER: require('../../assets/water.png'),
   CREDIT_CARD: require('../../assets/creditcard.png'),
   ADD: require('../../assets/add.png'),
+  CLOSE: require('../../assets/close.png'),
 };

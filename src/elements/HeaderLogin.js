@@ -31,14 +31,14 @@ type HeaderInput = {
   backAction: () => void,
 };
 
-const HeaderLogin = ({ title, backAction }: HeaderInput) => (
+const HeaderLogin = ({ title, backAction, logo }: HeaderInput) => (
   <Wrapper>
     <BackButton onPress={backAction}>
       <Icon
         width={27}
         height={27}
         tintColor="white"
-        icon={LOGO_HELPER.BACK_ICON}
+        icon={logo ? logo : LOGO_HELPER.BACK_ICON}
       />
     </BackButton>
     <Title>{title}</Title>
@@ -48,6 +48,7 @@ const HeaderLogin = ({ title, backAction }: HeaderInput) => (
 HeaderLogin.propTypes = {
   title: PropTypes.string.isRequired,
   backAction: PropTypes.func.isRequired,
+  logo: PropTypes.any,
 };
 
 export default HeaderLogin;
