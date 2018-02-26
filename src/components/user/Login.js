@@ -67,6 +67,7 @@ class Login extends React.Component {
     if (email === null || password === null) {
       this.showMessage('Please fill all the fields');
     }
+    this.props.navigation.navigate('home');
   };
 
   render() {

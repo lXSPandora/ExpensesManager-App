@@ -13,7 +13,7 @@ const Wrapper = styled.View`
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  margin-horizontal: 20;
+  margin-horizontal: 15;
   margin-top: 20;
 `;
 

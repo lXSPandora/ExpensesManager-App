@@ -15,6 +15,8 @@ const Wrapper = styled.TouchableOpacity`
 const Text = styled.Text`
   font-size: 20;
   font-weight: bold;
+  width: 100;
+  text-align: center;
   color: ${props => props.textColor};
 `;
 

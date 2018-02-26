@@ -48,7 +48,9 @@ const Tabs = styled.View`
 `;
 
 const TabTitle = styled.Text`
-  font-size: 20;
+  font-size: 16;
+  text-align: center;
+  width: ${IndicatorSize};
   color: white;
   font-weight: bold;
 `;

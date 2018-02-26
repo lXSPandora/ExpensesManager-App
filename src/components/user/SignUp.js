@@ -82,6 +82,7 @@ class SignUp extends React.Component {
     if (password !== confirm) {
       this.showError('Password and Confirm password must be the equal');
     }
+    this.props.navigation.navigate('home');
   };
 
   render() {
