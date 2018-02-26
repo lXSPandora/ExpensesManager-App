@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "eslint": "^4.18.1",
+    "husky": "^0.14.3",
     "react": "16.2.0",
     "react-native": "0.53.3",
     "react-native-actionsheet": "^2.3.0",

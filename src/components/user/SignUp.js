@@ -27,8 +27,6 @@ class SignUp extends React.Component {
     email: null,
     password: null,
     confirm: null,
-    companyName: null,
-    companyIndustry: null,
     error: false,
   };
   static navigationOptions = {
@@ -60,27 +58,13 @@ class SignUp extends React.Component {
   };
 
   signUp = () => {
-    const {
-      fullName,
-      email,
-      password,
-      confirm,
-      companyName,
-      companyIndustry,
-    } = this.state;
+    const { fullName, email, password, confirm } = this.state;
 
-    if (
-      !fullName ||
-      !email ||
-      !password ||
-      !confirm ||
-      !companyName ||
-      !companyIndustry
-    ) {
-      this.showError('Please fill all the fields');
+    if (!fullName || !email || !password || !confirm) {
+      return this.showError('Please fill all the fields');
     }
     if (password !== confirm) {
-      this.showError('Password and Confirm password must be the equal');
+      return this.showError('Password and Confirm password must be the equal');
     }
     this.props.navigation.navigate('home');
   };

@@ -1,7 +1,6 @@
 // @flow
 import * as React from 'react';
 import {
-  ScrollView,
   Dimensions,
   Platform,
   StatusBar,
@@ -65,7 +64,7 @@ class Login extends React.Component {
     const { email, password } = this.state;
 
     if (email === null || password === null) {
-      this.showMessage('Please fill all the fields');
+      return this.showMessage('Please fill all the fields');
     }
     this.props.navigation.navigate('home');
   };
