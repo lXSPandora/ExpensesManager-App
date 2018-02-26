@@ -37,12 +37,12 @@
     "react-test-renderer": "16.2.0"
   },
   "lint-staged": {
-    "*.js": ["yarn prettier", "eslint --fix", "git add"]
+    "*.js": ["eslint --fix", "git add"]
   },
+
   "jest": {
     "preset": "react-native"
   },
-  "pre-commit": "lint:staged",
   "scripts": {
     "start": "haul",
     "test": "jest",
@@ -53,6 +53,6 @@
       "adb install android/app/build/outputs/apk/app-release.apk",
     "ios": "react-native run-ios",
     "lint": "eslint src",
-    "lint:staged": "lint-staged"
+    "precommit": "lint-staged"
   }
 }
