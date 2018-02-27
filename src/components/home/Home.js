@@ -87,7 +87,7 @@ class Home extends Component {
         <SafeAreaView />
         <Content>
           <Header title="Home" renderButton={this.renderAddButton} />
-          <Tabs routes={TABS} onChangeIndex={key => this.setList(key)} actualRoute={route_key} />
+          <Tabs routes={TABS} onChangeIndex={key => this.setList(key)} actualRoute={route_key} indicatorColor="white" />
           {this.renderTabsContent()}
         </Content>
       </GradientBackground>

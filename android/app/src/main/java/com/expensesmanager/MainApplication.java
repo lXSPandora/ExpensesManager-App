@@ -3,6 +3,7 @@ package com.expensesmanager;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.horcrux.svg.SvgPackage;
 import com.azendoo.reactnativesnackbar.SnackbarPackage;
 import com.hieuvp.fingerprint.ReactNativeFingerprintScannerPackage;
 import com.horcrux.svg.SvgPackage;
@@ -27,6 +28,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new SvgPackage(),
             new SnackbarPackage(),
             new LinearGradientPackage(),
             new ReactNativeFingerprintScannerPackage(),
