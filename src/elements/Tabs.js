@@ -13,7 +13,7 @@ const Wrapper = styled.View`
 `;
 
 const TabTitle = styled.Text`
-  font-size: 16;
+  font-size: 18;
   text-align: center;
   width: ${props => props.size};
   color: white;
