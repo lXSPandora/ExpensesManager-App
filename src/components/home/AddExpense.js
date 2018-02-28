@@ -203,17 +203,17 @@ class AddExpense extends React.Component {
             <InputLabel>Expense Status</InputLabel>
             <SelectLabelContainer>
               <StyledButton
-                color="#E73535"
+                color="rgba(216, 216, 216, 0.6)"
                 textColor="white"
-                border={status === statusValues.NOT_PAID ? 'white' : '#E73535'}
+                border={status === statusValues.NOT_PAID ? 'white' : 'rgba(216, 216, 216, 0.6)'}
                 width={InputWidth / 2 - 10}
                 title="Not Paid"
                 onPress={() => this.setStatus(statusValues.NOT_PAID)}
               />
               <StyledButton
-                color="#3585E7"
+                color="rgba(216, 216, 216, 0.6)"
                 textColor="white"
-                border={status === statusValues.PAID ? 'white' : '#3585E7'}
+                border={status === statusValues.PAID ? 'white' : 'rgba(216, 216, 216, 0.6)'}
                 width={InputWidth / 2 - 10}
                 title="Paid"
                 onPress={() => this.setStatus(statusValues.PAID)}
